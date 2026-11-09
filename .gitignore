@@ -1,0 +1,13 @@
+# Token Leak & Sensitive Data Protection
+answers_db.json
+answers_db.json.tmp
+speexx_profile/
+__pycache__/
+*.py[cod]
+*.mp3
+temp_*
+daemon_temp*
+*.jpg
+*.png
+.env
+

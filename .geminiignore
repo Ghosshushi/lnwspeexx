@@ -1,0 +1,14 @@
+# BLOCK ANTIGRAVITY / GEMINI INDEXER FROM LARGE DB, PROFILE, CACHE & AUDIO FILES
+answers_db.json
+answers_db.json.tmp
+speexx_profile/
+speexx_profile/**
+__pycache__/
+__pycache__/**
+*.py[cod]
+*.mp3
+temp_*
+daemon_temp*
+*.jpg
+*.png
+

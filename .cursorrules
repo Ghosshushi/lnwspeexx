@@ -1,0 +1,8 @@
+# Speexx & Cambridge Turbo Bot — Ultra-Compact Rules
+
+Follow `AGENT_SKILL.md` strictly:
+1. **Silent 1-Line Output**: Reply MAX 1 status line per turn (e.g. `[Unit 32 Ex 1] 100/100 -> Next` or `[Cambridge U1 Ex2] 100% -> Next`) then invoke tools immediately.
+2. **STRICT DB & FILE BLOCK**: NEVER create stray `.js` files in the folder. NEVER read `answers_db.json`, `speexx_profile/`, `__pycache__/`, or `*.mp3` directly — query/save via `http://localhost:8765` ONLY.
+3. **Auto Platform Detection (`location.hostname`)**:
+   - **On `speexx.com`**: Use `await SpeexxHelper.autoLoop(answers)` (or `autoSolveFast(answers, { autoNext: true })`), which auto-fetches/saves port 8765, auto-solves Drag&Drop/Select/Radio/Toggle/Video/Speaking in a continuous batch loop, checks `getTabStatus().allGreen === true`, and pauses automatically on `Level Test` (`pausedForTest` / `blockedTest`).
+   - **On `cambridge`**: Use `CambridgeHelper` (`getActiveDoc()`, `extractActivity()`, `fillAndCheck(answers)`, `fixWrongAnswers()`, `autoSolve()`) loaded from `http://localhost:8765/helper.js`.

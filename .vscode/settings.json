@@ -1,0 +1,21 @@
+{
+  "files.watcherExclude": {
+    "**/answers_db.json": true,
+    "**/answers_db.json.tmp": true,
+    "**/speexx_profile/**": true,
+    "**/__pycache__/**": true,
+    "**/*.mp3": true
+  },
+  "search.exclude": {
+    "**/answers_db.json": true,
+    "**/answers_db.json.tmp": true,
+    "**/speexx_profile/**": true,
+    "**/__pycache__/**": true,
+    "**/*.mp3": true
+  },
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.mp3": true
+  }
+}
+
